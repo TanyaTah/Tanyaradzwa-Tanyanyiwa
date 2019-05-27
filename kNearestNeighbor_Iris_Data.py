@@ -87,7 +87,7 @@ pd.crosstab(y_test, y_predicted, rownames=['True'], colnames=['Predicted'], marg
 y_predicted_probability = knn_model.predict_proba(X_test)[:,1]
 print(y_predicted_probability)
 
-#Other performance score
+#Other performance scores
 import numpy as np
 
 print("Test set score: {:.2f}".format(np.mean(y_predicted == y_test)))
